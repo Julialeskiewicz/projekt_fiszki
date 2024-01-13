@@ -40,3 +40,10 @@ def ok_button():
     words_to = DataFrame(data=to_learn)
     words_to.to_csv("data/words_to_learn.csv", index=False)
     random_word()
+
+# tkinter GUI
+window = Tk()
+window.title("Flashy")
+window.config(padx=50, pady=50, background=BACKGROUND_COLOR)
+window.minsize(width=600, height=400)
+
