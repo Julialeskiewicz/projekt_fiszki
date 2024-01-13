@@ -47,3 +47,8 @@ window.title("Flashy")
 window.config(padx=50, pady=50, background=BACKGROUND_COLOR)
 window.minsize(width=600, height=400)
 
+flip_timer = window.after(3000, random_word)
+
+X_image = PhotoImage(file="./images/wrong.png")
+X_button = Button(image=X_image, highlightthickness=0, command=random_word)
+X_button.grid(column=0, row=1)
