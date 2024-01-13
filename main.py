@@ -56,3 +56,9 @@ X_button.grid(column=0, row=1)
 V_image = PhotoImage(file="./images/right.png")
 V_button = Button(image=V_image, highlightthickness=0, command=ok_button)
 V_button.grid(column=1, row=1)
+
+
+front = PhotoImage(file="./images/card_front.png")
+back = PhotoImage(file="./images/card_back.png")
+f_card = Canvas(window, width=800, height=526, background=BACKGROUND_COLOR, highlightthickness=0)
+canvas_image = f_card.create_image(400, 263, image=front)
