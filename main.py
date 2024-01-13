@@ -29,3 +29,8 @@ def random_word():
     else:
         window.destroy()
 
+def random_english():
+    f_card.itemconfig(canvas_image, image=back)
+    english_word = current_card["ENGLISH"]
+    f_card.itemconfig(card_title, text="ENGLISH", fill="#FFFFFF")
+    f_card.itemconfig(card_word, text=english_word, fill="#FFFFFF")
