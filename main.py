@@ -52,3 +52,7 @@ flip_timer = window.after(3000, random_word)
 X_image = PhotoImage(file="./images/wrong.png")
 X_button = Button(image=X_image, highlightthickness=0, command=random_word)
 X_button.grid(column=0, row=1)
+
+V_image = PhotoImage(file="./images/right.png")
+V_button = Button(image=V_image, highlightthickness=0, command=ok_button)
+V_button.grid(column=1, row=1)
