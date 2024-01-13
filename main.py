@@ -34,3 +34,9 @@ def random_english():
     english_word = current_card["ENGLISH"]
     f_card.itemconfig(card_title, text="ENGLISH", fill="#FFFFFF")
     f_card.itemconfig(card_word, text=english_word, fill="#FFFFFF")
+
+def ok_button():
+    to_learn.remove(current_card)
+    words_to = DataFrame(data=to_learn)
+    words_to.to_csv("data/words_to_learn.csv", index=False)
+    random_word()
