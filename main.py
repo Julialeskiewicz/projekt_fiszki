@@ -9,7 +9,7 @@ BACKGROUND_COLOR = "#B1DDC6"
 # csv
 try:
     x = read_csv("data/words_to_learn.csv")
-except FileNotFoundError:
+except(FileNotFoundError, errors.EmptyDataError):
     x = read_csv("./data/english_words.csv")
 
 to_learn = x.to_dict(orient="records")
